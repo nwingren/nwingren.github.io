@@ -1,0 +1,31 @@
+fe2ms.utility.ComputationVolume
+===============================
+
+.. currentmodule:: fe2ms.utility
+
+.. autoclass:: ComputationVolume
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ComputationVolume.__init__
+      ~ComputationVolume.get_epsr
+      ~ComputationVolume.get_external_facets
+      ~ComputationVolume.get_inv_mur
+      ~ComputationVolume.get_pec_facets
+      ~ComputationVolume.get_xi
+      ~ComputationVolume.get_zeta
+   
+   
+
+   
+   
+   

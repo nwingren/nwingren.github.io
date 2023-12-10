@@ -1,0 +1,6 @@
+fe2ms.result\_computations.compute\_far\_field\_integral
+========================================================
+
+.. currentmodule:: fe2ms.result_computations
+
+.. autofunction:: compute_far_field_integral

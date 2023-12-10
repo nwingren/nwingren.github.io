@@ -1,0 +1,31 @@
+﻿fe2ms.result\_computations
+==========================
+
+.. automodule:: fe2ms.result_computations
+  
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+   
+      compute_far_field_integral
+      compute_near_field_bi
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

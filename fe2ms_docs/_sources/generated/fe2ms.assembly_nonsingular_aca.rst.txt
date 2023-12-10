@@ -1,0 +1,36 @@
+﻿fe2ms.assembly\_nonsingular\_aca
+================================
+
+.. automodule:: fe2ms.assembly_nonsingular_aca
+  
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+   
+      compute_KL_operators_far_octree
+      compute_KL_operators_near_octree
+      compute_KL_operators_near_thres
+      compute_K_operator_entry_far
+      compute_L_operator_entry_far
+      find_near_indices_octree
+      recompress_uv
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

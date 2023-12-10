@@ -1,0 +1,36 @@
+﻿fe2ms.FEBISystemFull
+====================
+
+.. currentmodule:: fe2ms
+
+.. autoclass:: FEBISystemFull
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~FEBISystemFull.__init__
+      ~FEBISystemFull.assemble
+      ~FEBISystemFull.compute_far_field
+      ~FEBISystemFull.compute_near_field
+      ~FEBISystemFull.compute_rcs
+      ~FEBISystemFull.connect_fe_bi
+      ~FEBISystemFull.set_source_dipole
+      ~FEBISystemFull.set_source_plane_wave
+      ~FEBISystemFull.solve
+      ~FEBISystemFull.solve_direct
+      ~FEBISystemFull.solve_iterative
+      ~FEBISystemFull.solve_semidirect
+   
+   
+
+   
+   
+   

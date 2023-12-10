@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>fe2ms.materials.FOAM &mdash; FE2MS  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="fe2ms.materials.FR4" href="fe2ms.materials.FR4.html" />
+    <link rel="prev" title="fe2ms.materials.RIME" href="fe2ms.materials.RIME.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            FE2MS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../reference.html">API reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../reference.html#main-public-interface">Main public interface</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="fe2ms.ComputationVolume.html">fe2ms.ComputationVolume</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fe2ms.FEBISystemFull.html">fe2ms.FEBISystemFull</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fe2ms.FEBISystemACA.html">fe2ms.FEBISystemACA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fe2ms.preconditioners.html">fe2ms.preconditioners</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="fe2ms.materials.html">fe2ms.materials</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="fe2ms.materials.VACUUM.html">fe2ms.materials.VACUUM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fe2ms.materials.ICE.html">fe2ms.materials.ICE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fe2ms.materials.SNOW.html">fe2ms.materials.SNOW</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fe2ms.materials.RIME.html">fe2ms.materials.RIME</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">fe2ms.materials.FOAM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fe2ms.materials.FR4.html">fe2ms.materials.FR4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fe2ms.materials.FR4_1MHz.html">fe2ms.materials.FR4_1MHz</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fe2ms.materials.SAND.html">fe2ms.materials.SAND</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fe2ms.materials.ABS.html">fe2ms.materials.ABS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fe2ms.materials.PET.html">fe2ms.materials.PET</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fe2ms.materials.PLA.html">fe2ms.materials.PLA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fe2ms.materials.PLA_60GHz.html">fe2ms.materials.PLA_60GHz</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../reference.html#internal-submodules">Internal submodules</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">FE2MS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../reference.html">API reference</a></li>
+          <li class="breadcrumb-item"><a href="fe2ms.materials.html">fe2ms.materials</a></li>
+      <li class="breadcrumb-item active">fe2ms.materials.FOAM</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/fe2ms.materials.FOAM.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="fe2ms-materials-foam">
+<h1>fe2ms.materials.FOAM<a class="headerlink" href="#fe2ms-materials-foam" title="Link to this heading"></a></h1>
+<dl class="py data">
+<dt class="sig sig-object py" id="fe2ms.materials.FOAM">
+<span class="sig-prename descclassname"><span class="pre">fe2ms.materials.</span></span><span class="sig-name descname"><span class="pre">FOAM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(3.0,</span> <span class="pre">1.0)</span></em><a class="headerlink" href="#fe2ms.materials.FOAM" title="Link to this definition"></a></dt>
+<dd><p>Divinycell HT foam core</p>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="fe2ms.materials.RIME.html" class="btn btn-neutral float-left" title="fe2ms.materials.RIME" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="fe2ms.materials.FR4.html" class="btn btn-neutral float-right" title="fe2ms.materials.FR4" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Niklas Wingren.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

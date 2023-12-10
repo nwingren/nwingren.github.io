@@ -1,0 +1,25 @@
+fe2ms.bi\_space.BIBasisData
+===========================
+
+.. currentmodule:: fe2ms.bi_space
+
+.. autoclass:: BIBasisData
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~BIBasisData.__init__
+   
+   
+
+   
+   
+   

@@ -1,0 +1,6 @@
+fe2ms.materials.ABS
+===================
+
+.. currentmodule:: fe2ms.materials
+
+.. autodata:: ABS

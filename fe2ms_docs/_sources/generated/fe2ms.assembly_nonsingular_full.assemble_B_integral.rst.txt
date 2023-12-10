@@ -1,0 +1,6 @@
+fe2ms.assembly\_nonsingular\_full.assemble\_B\_integral
+=======================================================
+
+.. currentmodule:: fe2ms.assembly_nonsingular_full
+
+.. autofunction:: assemble_B_integral

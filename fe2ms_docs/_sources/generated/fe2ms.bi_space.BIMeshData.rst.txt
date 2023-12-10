@@ -1,0 +1,25 @@
+fe2ms.bi\_space.BIMeshData
+==========================
+
+.. currentmodule:: fe2ms.bi_space
+
+.. autoclass:: BIMeshData
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~BIMeshData.__init__
+   
+   
+
+   
+   
+   

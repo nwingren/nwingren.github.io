@@ -1,0 +1,6 @@
+fe2ms.materials.PLA\_60GHz
+==========================
+
+.. currentmodule:: fe2ms.materials
+
+.. autodata:: PLA_60GHz

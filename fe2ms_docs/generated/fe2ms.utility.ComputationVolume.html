@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>fe2ms.utility.ComputationVolume &mdash; FE2MS  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="fe2ms.utility.FEBIBlocks" href="fe2ms.utility.FEBIBlocks.html" />
+    <link rel="prev" title="fe2ms.utility.connect_fe_bi_spaces" href="fe2ms.utility.connect_fe_bi_spaces.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            FE2MS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../reference.html">API reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../reference.html#main-public-interface">Main public interface</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../reference.html#internal-submodules">Internal submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="fe2ms.systems.html">fe2ms.systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fe2ms.result_computations.html">fe2ms.result_computations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fe2ms.assembly.html">fe2ms.assembly</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fe2ms.assembly_nonsingular_full.html">fe2ms.assembly_nonsingular_full</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fe2ms.assembly_nonsingular_aca.html">fe2ms.assembly_nonsingular_aca</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fe2ms.bi_space.html">fe2ms.bi_space</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="fe2ms.utility.html">fe2ms.utility</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="fe2ms.utility.connect_fe_bi_spaces.html">fe2ms.utility.connect_fe_bi_spaces</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">fe2ms.utility.ComputationVolume</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fe2ms.utility.FEBIBlocks.html">fe2ms.utility.FEBIBlocks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fe2ms.utility.FEBISpaces.html">fe2ms.utility.FEBISpaces</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">FE2MS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../reference.html">API reference</a></li>
+          <li class="breadcrumb-item"><a href="fe2ms.utility.html">fe2ms.utility</a></li>
+      <li class="breadcrumb-item active">fe2ms.utility.ComputationVolume</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/fe2ms.utility.ComputationVolume.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="fe2ms-utility-computationvolume">
+<h1>fe2ms.utility.ComputationVolume<a class="headerlink" href="#fe2ms-utility-computationvolume" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="fe2ms.utility.ComputationVolume">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">fe2ms.utility.</span></span><span class="sig-name descname"><span class="pre">ComputationVolume</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mesh_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">materials</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ext_boundaries</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pec_boundaries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fe2ms.utility.ComputationVolume" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Mesh, material properties and boundary conditions for a FEBI computation
+volume.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="fe2ms.utility.ComputationVolume.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mesh_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">materials</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ext_boundaries</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pec_boundaries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fe2ms.utility.ComputationVolume.__init__" title="Link to this definition"></a></dt>
+<dd><p>Load mesh from file and associate material and boundary data to it.</p>
+<p>Materials are used in the general constitutive relations as follows:</p>
+<blockquote>
+<div><p>D = eps0 * epsr * E + eps0 * eta0 * xi * H</p>
+<p>B = 1/c0 * zeta * E + mu0 * mur * H</p>
+</div></blockquote>
+<p>Each parameter can be either a scalar or a 3x3 tensor, depending on the material model. The
+models are
+Isotropic: (epsr, mur) where both parameters are scalars.
+Anisotropic: (epsr, mur) where at least one parameter is a 3x3 tensor.
+Bi-isotropic: (epsr, mur, xi, zeta) where all parameters are scalars.
+Bi-anisotropic: (epsr, mur, xi, zeta) where at least one parameter is a 3x3 tensor.
+Lossy materials are defined using complex parameters on the form epsr = epsr’ - j*epsr’’.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mesh_file</strong> (<em>str</em>) – Name of Gmsh mesh file in .msh file format.</p></li>
+<li><p><strong>materials</strong> (<em>dict</em>) – Map from volume physical groups (int) to materials (tuple). The tuple can contain either
+two parameters (isotropic/anisotropic) or four parameters (bi-isotropic/bi-anisotropic).
+Parameters can be either scalars or numpy arrays of shape (3,3).</p></li>
+<li><p><strong>ext_boundaries</strong> (<em>list</em>) – List of surface physical groups (int) of exterior boundary.</p></li>
+<li><p><strong>pec_boundaries</strong> (<em>list</em><em>, </em><em>optional</em>) – List of surface physical groups (int) of pec boundary,
+by default None.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fe2ms.utility.ComputationVolume.__init__" title="fe2ms.utility.ComputationVolume.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(mesh_file, materials, ext_boundaries)</p></td>
+<td><p>Load mesh from file and associate material and boundary data to it.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fe2ms.utility.ComputationVolume.get_epsr" title="fe2ms.utility.ComputationVolume.get_epsr"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_epsr</span></code></a>()</p></td>
+<td><p>Get relative permittivity for all elements in the computational volume.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fe2ms.utility.ComputationVolume.get_external_facets" title="fe2ms.utility.ComputationVolume.get_external_facets"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_external_facets</span></code></a>()</p></td>
+<td><p>Get facets located at external boundary of computational volume.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fe2ms.utility.ComputationVolume.get_inv_mur" title="fe2ms.utility.ComputationVolume.get_inv_mur"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_inv_mur</span></code></a>()</p></td>
+<td><p>Get inverse of relative permeability for all elements in the computational volume.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fe2ms.utility.ComputationVolume.get_pec_facets" title="fe2ms.utility.ComputationVolume.get_pec_facets"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_pec_facets</span></code></a>()</p></td>
+<td><p>Get facets located at PEC boundaries of computational volume.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fe2ms.utility.ComputationVolume.get_xi" title="fe2ms.utility.ComputationVolume.get_xi"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_xi</span></code></a>()</p></td>
+<td><p>Get parameter coupling H-&gt;D for all elements in the computational volume.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fe2ms.utility.ComputationVolume.get_zeta" title="fe2ms.utility.ComputationVolume.get_zeta"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_zeta</span></code></a>()</p></td>
+<td><p>Get parameter coupling E-&gt;B for all elements in the computational volume.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt class="sig sig-object py" id="fe2ms.utility.ComputationVolume.get_epsr">
+<span class="sig-name descname"><span class="pre">get_epsr</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fe2ms.utility.ComputationVolume.get_epsr" title="Link to this definition"></a></dt>
+<dd><p>Get relative permittivity for all elements in the computational volume.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>epsr</strong> – DOLFINx function describing relative permittivity. Defined using a
+discontinuous Galerkin function space such that the permittivity is constant within
+mesh elements. If anisotropic materials are present, this space will be defined with a
+tensor element such that the tensor components are constant within mesh elements.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dolfinx.fem.Function</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="fe2ms.utility.ComputationVolume.get_external_facets">
+<span class="sig-name descname"><span class="pre">get_external_facets</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fe2ms.utility.ComputationVolume.get_external_facets" title="Link to this definition"></a></dt>
+<dd><p>Get facets located at external boundary of computational volume.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ext_facets</strong> – Array containing DOLFINx indices of facets at external boundary.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="fe2ms.utility.ComputationVolume.get_inv_mur">
+<span class="sig-name descname"><span class="pre">get_inv_mur</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fe2ms.utility.ComputationVolume.get_inv_mur" title="Link to this definition"></a></dt>
+<dd><p>Get inverse of relative permeability for all elements in the computational volume.
+For isotropic materials this is simply 1/mur, but for anisotropic materials it is the
+inverse to the mur tensor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>inv_mur</strong> – DOLFINx function describing relative permeability. Defined using a
+discontinuous Galerkin function space such that the permeability is constant within
+mesh elements. If anisotropic materials are present, this space will be defined with a
+tensor element such that the tensor components are constant within mesh elements.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dolfinx.fem.Function</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="fe2ms.utility.ComputationVolume.get_pec_facets">
+<span class="sig-name descname"><span class="pre">get_pec_facets</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fe2ms.utility.ComputationVolume.get_pec_facets" title="Link to this definition"></a></dt>
+<dd><p>Get facets located at PEC boundaries of computational volume.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pec_facets</strong> – Array containing DOLFINx indices of facets at PEC boundaries.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="fe2ms.utility.ComputationVolume.get_xi">
+<span class="sig-name descname"><span class="pre">get_xi</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fe2ms.utility.ComputationVolume.get_xi" title="Link to this definition"></a></dt>
+<dd><p>Get parameter coupling H-&gt;D for all elements in the computational volume.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>xi</strong> – DOLFINx function describing the parameter. Defined using a
+discontinuous Galerkin function space such that xi is constant within
+mesh elements. If anisotropic materials are present, this space will be defined with a
+tensor element such that the tensor components are constant within mesh elements.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dolfinx.fem.Function</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="fe2ms.utility.ComputationVolume.get_zeta">
+<span class="sig-name descname"><span class="pre">get_zeta</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fe2ms.utility.ComputationVolume.get_zeta" title="Link to this definition"></a></dt>
+<dd><p>Get parameter coupling E-&gt;B for all elements in the computational volume.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>zeta</strong> – DOLFINx function describing the parameter. Defined using a
+discontinuous Galerkin function space such that zeta is constant within
+mesh elements. If anisotropic materials are present, this space will be defined with a
+tensor element such that the tensor components are constant within mesh elements.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dolfinx.fem.Function</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="fe2ms.utility.connect_fe_bi_spaces.html" class="btn btn-neutral float-left" title="fe2ms.utility.connect_fe_bi_spaces" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="fe2ms.utility.FEBIBlocks.html" class="btn btn-neutral float-right" title="fe2ms.utility.FEBIBlocks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Niklas Wingren.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

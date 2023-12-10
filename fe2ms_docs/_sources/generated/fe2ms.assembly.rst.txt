@@ -1,0 +1,33 @@
+﻿fe2ms.assembly
+==============
+
+.. automodule:: fe2ms.assembly
+  
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+   
+      assemble_KB_blocks
+      assemble_bi_aca
+      assemble_bi_blocks_full
+      assemble_rhs
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>fe2ms.assembly.assemble_bi_aca &mdash; FE2MS  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="fe2ms.assembly.assemble_bi_blocks_full" href="fe2ms.assembly.assemble_bi_blocks_full.html" />
+    <link rel="prev" title="fe2ms.assembly.assemble_KB_blocks" href="fe2ms.assembly.assemble_KB_blocks.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            FE2MS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../reference.html">API reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../reference.html#main-public-interface">Main public interface</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../reference.html#internal-submodules">Internal submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="fe2ms.systems.html">fe2ms.systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fe2ms.result_computations.html">fe2ms.result_computations</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="fe2ms.assembly.html">fe2ms.assembly</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="fe2ms.assembly.assemble_KB_blocks.html">fe2ms.assembly.assemble_KB_blocks</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">fe2ms.assembly.assemble_bi_aca</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fe2ms.assembly.assemble_bi_blocks_full.html">fe2ms.assembly.assemble_bi_blocks_full</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fe2ms.assembly.assemble_rhs.html">fe2ms.assembly.assemble_rhs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="fe2ms.assembly_nonsingular_full.html">fe2ms.assembly_nonsingular_full</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fe2ms.assembly_nonsingular_aca.html">fe2ms.assembly_nonsingular_aca</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fe2ms.bi_space.html">fe2ms.bi_space</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fe2ms.utility.html">fe2ms.utility</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">FE2MS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../reference.html">API reference</a></li>
+          <li class="breadcrumb-item"><a href="fe2ms.assembly.html">fe2ms.assembly</a></li>
+      <li class="breadcrumb-item active">fe2ms.assembly.assemble_bi_aca</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/fe2ms.assembly.assemble_bi_aca.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="fe2ms-assembly-assemble-bi-aca">
+<h1>fe2ms.assembly.assemble_bi_aca<a class="headerlink" href="#fe2ms-assembly-assemble-bi-aca" title="Link to this heading"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="fe2ms.assembly.assemble_bi_aca">
+<span class="sig-prename descclassname"><span class="pre">fe2ms.assembly.</span></span><span class="sig-name descname"><span class="pre">assemble_bi_aca</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshdata</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="fe2ms.bi_space.BIMeshData.html#fe2ms.bi_space.BIMeshData" title="fe2ms.bi_space.BIMeshData"><span class="pre">BIMeshData</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">basisdata</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="fe2ms.bi_space.BIBasisData.html#fe2ms.bi_space.BIBasisData" title="fe2ms.bi_space.BIBasisData"><span class="pre">BIBasisData</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">recompress</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_level</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quad_order_singular</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fe2ms.assembly.assemble_bi_aca" title="Link to this definition"></a></dt>
+<dd><p>Assemble BI blocks using the adaptive cross approximation (ACA). Uses AdaptOctree to subdivide
+geometry into near and far parts (far parts are treated in a multilevel fashion). Near parts are
+assembled fully into sparse arrays, and far parts are assembled using the ACA into a series of
+outer product forms. A special object is used to handle operations using the ACA data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>k0</strong> (<em>float</em>) – Free-space wavenumber of problem.</p></li>
+<li><p><strong>meshdata</strong> (<em>utility.BIMeshData</em>) – Mesh data for the BI problem.</p></li>
+<li><p><strong>basisdata</strong> (<a class="reference internal" href="fe2ms.bi_space.BIBasisData.html#fe2ms.bi_space.BIBasisData" title="fe2ms.bi_space.BIBasisData"><em>bi_space.BIBasisData</em></a>) – Basis data for the BI problem.</p></li>
+<li><p><strong>recompress</strong> (<em>bool</em>) – Whether to recompress ACA blocks using QR and SVD.</p></li>
+<li><p><strong>target_points</strong> (<em>int</em>) – Target for the mean number of points per group. ‘None’ will set this to the square root of
+the number of BI DoFs.</p></li>
+<li><p><strong>max_points</strong> (<em>int</em>) – Maximum number of points per groups. If not ‘None’, this will override the iteration for
+obtaining mean number of points per grous.</p></li>
+<li><p><strong>max_level</strong> (<em>int</em>) – Maximum level for octree.</p></li>
+<li><p><strong>tolerance</strong> (<em>float</em>) – Tolerance for the ACA and recompression SVD.</p></li>
+<li><p><strong>quad_order_singular</strong> (<em>int</em>) – Quadrature order to use in DEMCEM singular integral computations.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>Kop_near</strong> (<em>ndarray</em>) – Matrix for near interactions of tested K-operator.</p></li>
+<li><p><strong>Lop_near</strong> (<em>ndarray</em>) – Matrix for near interactions of tested L-operator.</p></li>
+<li><p><strong>far_operator</strong> (<em>febi.assembly_nonsingular_aca.MultilevelOperator</em>) – Object for ACA part of both tested K and L operators. Contains outer product forms and
+matvec methods.</p></li>
+<li><p><strong>K_prec</strong> (<em>sparray</em>) – Matrix with preconditioner entries.</p></li>
+<li><p><strong>L_prec</strong> (<em>sparray</em>) – Matrix with preconditioner entries.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="fe2ms.assembly.assemble_KB_blocks.html" class="btn btn-neutral float-left" title="fe2ms.assembly.assemble_KB_blocks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="fe2ms.assembly.assemble_bi_blocks_full.html" class="btn btn-neutral float-right" title="fe2ms.assembly.assemble_bi_blocks_full" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Niklas Wingren.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

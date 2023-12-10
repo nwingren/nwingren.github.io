@@ -1,0 +1,33 @@
+﻿fe2ms.systems
+=============
+
+.. automodule:: fe2ms.systems
+  
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+   
+      FEBISystem
+      FEBISystemACA
+      FEBISystemFull
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,32 @@
+﻿fe2ms.bi\_space
+===============
+
+.. automodule:: fe2ms.bi_space
+  
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+   
+      BIBasisData
+      BIMeshData
+   
+   
+
+   
+   
+   
+
+
+

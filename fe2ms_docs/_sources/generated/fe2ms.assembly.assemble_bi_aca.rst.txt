@@ -1,0 +1,6 @@
+fe2ms.assembly.assemble\_bi\_aca
+================================
+
+.. currentmodule:: fe2ms.assembly
+
+.. autofunction:: assemble_bi_aca

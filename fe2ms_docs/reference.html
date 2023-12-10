@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API reference &mdash; FE2MS  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="fe2ms.ComputationVolume" href="generated/fe2ms.ComputationVolume.html" />
+    <link rel="prev" title="FE2MS Documentation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            FE2MS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Home</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#main-public-interface">Main public interface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/fe2ms.ComputationVolume.html">fe2ms.ComputationVolume</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/fe2ms.FEBISystemFull.html">fe2ms.FEBISystemFull</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/fe2ms.FEBISystemACA.html">fe2ms.FEBISystemACA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/fe2ms.preconditioners.html">fe2ms.preconditioners</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/fe2ms.materials.html">fe2ms.materials</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#internal-submodules">Internal submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/fe2ms.systems.html">fe2ms.systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/fe2ms.result_computations.html">fe2ms.result_computations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/fe2ms.assembly.html">fe2ms.assembly</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/fe2ms.assembly_nonsingular_full.html">fe2ms.assembly_nonsingular_full</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/fe2ms.assembly_nonsingular_aca.html">fe2ms.assembly_nonsingular_aca</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/fe2ms.bi_space.html">fe2ms.bi_space</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/fe2ms.utility.html">fe2ms.utility</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">FE2MS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">API reference</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/reference.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="api-reference">
+<h1>API reference<a class="headerlink" href="#api-reference" title="Link to this heading"></a></h1>
+<section id="main-public-interface">
+<h2>Main public interface<a class="headerlink" href="#main-public-interface" title="Link to this heading"></a></h2>
+<p>The following classes make up the core of the public part of the code. These are callable directly
+from the top module for convenience, but the source code is located in the <code class="docutils literal notranslate"><span class="pre">systems</span></code> and
+<code class="docutils literal notranslate"><span class="pre">utility</span></code> submodules.</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/fe2ms.ComputationVolume.html#fe2ms.ComputationVolume" title="fe2ms.ComputationVolume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fe2ms.ComputationVolume</span></code></a>(mesh_file, ...[, ...])</p></td>
+<td><p>Mesh, material properties and boundary conditions for a FEBI computation volume.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/fe2ms.FEBISystemFull.html#fe2ms.FEBISystemFull" title="fe2ms.FEBISystemFull"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fe2ms.FEBISystemFull</span></code></a>(frequency, ...[, ...])</p></td>
+<td><p>FEBI system using the full block matrix structure.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/fe2ms.FEBISystemACA.html#fe2ms.FEBISystemACA" title="fe2ms.FEBISystemACA"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fe2ms.FEBISystemACA</span></code></a>(frequency, ...[, ...])</p></td>
+<td><p>FEBI system where the BI blocks are assembled using the adaptive cross approximation (ACA).</p></td>
+</tr>
+</tbody>
+</table>
+<p>The following submodules have useful contents to the classes above.</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/fe2ms.preconditioners.html#module-fe2ms.preconditioners" title="fe2ms.preconditioners"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fe2ms.preconditioners</span></code></a></p></td>
+<td><p>Various preconditioners used for iterative solution of full FE-BI system.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/fe2ms.materials.html#module-fe2ms.materials" title="fe2ms.materials"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fe2ms.materials</span></code></a></p></td>
+<td><p>Contains electromagnetic properties of various materials on the format (epsr, mur) where each property can be complex.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="internal-submodules">
+<h2>Internal submodules<a class="headerlink" href="#internal-submodules" title="Link to this heading"></a></h2>
+<p>Submodules which are mostly internal and rarely need to be called directly.</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/fe2ms.systems.html#module-fe2ms.systems" title="fe2ms.systems"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fe2ms.systems</span></code></a></p></td>
+<td><p>Finite element boundary integral systems based on different solution approaches.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/fe2ms.result_computations.html#module-fe2ms.result_computations" title="fe2ms.result_computations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fe2ms.result_computations</span></code></a></p></td>
+<td><p>Internal functions for computing results with numba JIT compilation.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/fe2ms.assembly.html#module-fe2ms.assembly" title="fe2ms.assembly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fe2ms.assembly</span></code></a></p></td>
+<td><p>Functions for assembly of the FE and BI blocks.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/fe2ms.assembly_nonsingular_full.html#module-fe2ms.assembly_nonsingular_full" title="fe2ms.assembly_nonsingular_full"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fe2ms.assembly_nonsingular_full</span></code></a></p></td>
+<td><p>Internal assembly functions for full nonsingular matrix assembly with numba JIT compilation.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/fe2ms.assembly_nonsingular_aca.html#module-fe2ms.assembly_nonsingular_aca" title="fe2ms.assembly_nonsingular_aca"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fe2ms.assembly_nonsingular_aca</span></code></a></p></td>
+<td><p>Internal assembly functions for ACA nonsingular matrix assembly with numba JIT compilation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/fe2ms.bi_space.html#module-fe2ms.bi_space" title="fe2ms.bi_space"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fe2ms.bi_space</span></code></a></p></td>
+<td><p>BI mesh and basis data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/fe2ms.utility.html#module-fe2ms.utility" title="fe2ms.utility"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fe2ms.utility</span></code></a></p></td>
+<td><p>Utility classes and internal functions.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="FE2MS Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="generated/fe2ms.ComputationVolume.html" class="btn btn-neutral float-right" title="fe2ms.ComputationVolume" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Niklas Wingren.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

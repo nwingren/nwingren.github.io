@@ -1,0 +1,32 @@
+﻿fe2ms.assembly\_nonsingular\_full
+=================================
+
+.. automodule:: fe2ms.assembly_nonsingular_full
+  
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+   
+      assemble_B_integral
+      assemble_KL_operators
+      facet_contrib_KL_operators
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,41 @@
+﻿fe2ms.materials
+===============
+
+.. automodule:: fe2ms.materials
+  
+   
+   
+   .. rubric:: Module Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      VACUUM
+      ICE
+      SNOW
+      RIME
+      FOAM
+      FR4
+      FR4_1MHz
+      SAND
+      ABS
+      PET
+      PLA
+      PLA_60GHz
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

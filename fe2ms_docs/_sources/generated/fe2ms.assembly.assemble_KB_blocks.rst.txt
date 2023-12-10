@@ -1,0 +1,6 @@
+fe2ms.assembly.assemble\_KB\_blocks
+===================================
+
+.. currentmodule:: fe2ms.assembly
+
+.. autofunction:: assemble_KB_blocks

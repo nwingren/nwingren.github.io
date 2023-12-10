@@ -1,0 +1,6 @@
+fe2ms.assembly\_nonsingular\_aca.compute\_L\_operator\_entry\_far
+=================================================================
+
+.. currentmodule:: fe2ms.assembly_nonsingular_aca
+
+.. autofunction:: compute_L_operator_entry_far

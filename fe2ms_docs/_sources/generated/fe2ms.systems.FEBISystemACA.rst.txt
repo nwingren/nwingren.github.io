@@ -1,0 +1,35 @@
+fe2ms.systems.FEBISystemACA
+===========================
+
+.. currentmodule:: fe2ms.systems
+
+.. autoclass:: FEBISystemACA
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~FEBISystemACA.__init__
+      ~FEBISystemACA.assemble
+      ~FEBISystemACA.compute_far_field
+      ~FEBISystemACA.compute_near_field
+      ~FEBISystemACA.compute_rcs
+      ~FEBISystemACA.connect_fe_bi
+      ~FEBISystemACA.set_source_dipole
+      ~FEBISystemACA.set_source_plane_wave
+      ~FEBISystemACA.solve
+      ~FEBISystemACA.solve_iterative
+      ~FEBISystemACA.solve_semidirect
+   
+   
+
+   
+   
+   

@@ -1,0 +1,6 @@
+fe2ms.result\_computations.compute\_near\_field\_bi
+===================================================
+
+.. currentmodule:: fe2ms.result_computations
+
+.. autofunction:: compute_near_field_bi

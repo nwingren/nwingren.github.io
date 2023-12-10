@@ -1,0 +1,6 @@
+fe2ms.assembly\_nonsingular\_aca.find\_near\_indices\_octree
+============================================================
+
+.. currentmodule:: fe2ms.assembly_nonsingular_aca
+
+.. autofunction:: find_near_indices_octree

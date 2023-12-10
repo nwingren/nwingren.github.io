@@ -1,0 +1,6 @@
+fe2ms.assembly\_nonsingular\_aca.compute\_KL\_operators\_near\_thres
+====================================================================
+
+.. currentmodule:: fe2ms.assembly_nonsingular_aca
+
+.. autofunction:: compute_KL_operators_near_thres

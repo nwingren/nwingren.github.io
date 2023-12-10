@@ -1,0 +1,32 @@
+﻿fe2ms.preconditioners
+=====================
+
+.. automodule:: fe2ms.preconditioners
+  
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+   
+      direct
+      iterative_ilu
+      iterative_petsc
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

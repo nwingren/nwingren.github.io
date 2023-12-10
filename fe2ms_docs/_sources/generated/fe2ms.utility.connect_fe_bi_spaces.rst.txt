@@ -1,0 +1,6 @@
+fe2ms.utility.connect\_fe\_bi\_spaces
+=====================================
+
+.. currentmodule:: fe2ms.utility
+
+.. autofunction:: connect_fe_bi_spaces

@@ -1,0 +1,39 @@
+fe2ms.utility.FEBISpaces
+========================
+
+.. currentmodule:: fe2ms.utility
+
+.. autoclass:: FEBISpaces
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~FEBISpaces.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~FEBISpaces.fe_space
+      ~FEBISpaces.bi_meshdata
+      ~FEBISpaces.bi_basisdata
+      ~FEBISpaces.T_SV
+      ~FEBISpaces.T_VS
+      ~FEBISpaces.T_IV
+      ~FEBISpaces.T_VI
+      ~FEBISpaces.fe_size
+      ~FEBISpaces.bi_size
+   
+   

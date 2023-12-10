@@ -1,0 +1,6 @@
+fe2ms.materials.FR4
+===================
+
+.. currentmodule:: fe2ms.materials
+
+.. autodata:: FR4

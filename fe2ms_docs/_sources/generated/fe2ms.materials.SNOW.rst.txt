@@ -1,0 +1,6 @@
+fe2ms.materials.SNOW
+====================
+
+.. currentmodule:: fe2ms.materials
+
+.. autodata:: SNOW
