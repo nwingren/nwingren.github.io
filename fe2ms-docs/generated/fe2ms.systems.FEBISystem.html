@@ -109,16 +109,17 @@
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>frequency</strong> (<em>float</em>) – Frequency in Hz.</p></li>
 <li><p><strong>computation_volume</strong> (<a class="reference internal" href="fe2ms.utility.ComputationVolume.html#fe2ms.utility.ComputationVolume" title="fe2ms.utility.ComputationVolume"><em>utility.ComputationVolume</em></a>) – FEBI computation volume defining mesh, material and boundaries.</p></li>
-<li><p><strong>formulation</strong> (<em>{'is-efie'</em><em>, </em><em>'vs-efie'</em><em>, </em><em>'ej'}</em><em>, </em><em>optional.</em>) – Formulation to use for finite element block structure and and
-boundary integral operators, by default ‘is-efie’
-‘is-efie’ uses I-S edge enumeration, i.e. explicit interior and surface finite element
-blocks, and uses the EFIE on the boundary.
-‘vs-efie’ uses V-S edge enumeration, i.e. one finite element block with transition
-operators to interior and surface, and uses the EFIE on the boundary.
-‘ej’ uses the symmetric formulation with both the EFIE and the MFIE. It requires use of
-I-S edge enumeration.
-‘teth’ is a CFIE formulation which uses I-S edge enumeration. It reduces, but does not
-eliminate, the influence of interior resonances.</p></li>
+<li><p><strong>formulation</strong> (<em>{'is-efie'</em><em>, </em><em>'vs-efie'</em><em>, </em><em>'ej'</em><em>, </em><em>'teth'}</em><em>, </em><em>optional.</em>) – <p>Formulation to use for finite element block structure and and
+boundary integral operators, by default ‘is-efie’</p>
+<p>’is-efie’ uses I-S edge enumeration, i.e. explicit interior and surface finite element
+blocks, and uses the EFIE on the boundary.</p>
+<p>’vs-efie’ uses V-S edge enumeration, i.e. one finite element block with transition
+operators to interior and surface, and uses the EFIE on the boundary.</p>
+<p>’ej’ uses the symmetric formulation with both the EFIE and the MFIE. It requires use of
+I-S edge enumeration.</p>
+<p>’teth’ is a CFIE formulation which uses I-S edge enumeration. It reduces, but does not
+eliminate, the influence of interior resonances.</p>
+</p></li>
 </ul>
 </dd>
 </dl>
